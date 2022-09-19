@@ -7,15 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		193BA86428A5101300B49D6E /* WeighView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193BA86328A5101300B49D6E /* WeighView.swift */; };
+		193BA86628A5157200B49D6E /* NutritionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193BA86528A5157200B49D6E /* NutritionModel.swift */; };
+		193BA86828A515EB00B49D6E /* BodyWeightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193BA86728A515EB00B49D6E /* BodyWeightModel.swift */; };
+		193BA86A28A5175B00B49D6E /* WeeklyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193BA86928A5175B00B49D6E /* WeeklyCard.swift */; };
+		193BA86E28A51AFA00B49D6E /* RingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193BA86D28A51AFA00B49D6E /* RingModel.swift */; };
+		193BA87228A51D3100B49D6E /* RingProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193BA87128A51D3100B49D6E /* RingProgress.swift */; };
+		193BA87428A5208900B49D6E /* RingChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193BA87328A5208900B49D6E /* RingChart.swift */; };
+		193BA87628A52E3A00B49D6E /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193BA87528A52E3A00B49D6E /* ColorPalette.swift */; };
+		193BA87828A5409E00B49D6E /* WeightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193BA87728A5409E00B49D6E /* WeightViewModel.swift */; };
+		193BA87C28A5461900B49D6E /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 193BA87B28A5461900B49D6E /* HealthKit.framework */; };
+		19B8CBB528BE6AD40004C48B /* NutrientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B8CBB428BE6AD40004C48B /* NutrientsView.swift */; };
+		19B8CBB728BE71D40004C48B /* DailyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B8CBB628BE71D40004C48B /* DailyCard.swift */; };
 		19C25D9F28A50DFD0083F2A8 /* MealPlannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C25D9E28A50DFD0083F2A8 /* MealPlannerApp.swift */; };
 		19C25DA128A50DFD0083F2A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C25DA028A50DFD0083F2A8 /* ContentView.swift */; };
 		19C25DA328A50DFE0083F2A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19C25DA228A50DFE0083F2A8 /* Assets.xcassets */; };
 		19C25DA628A50DFE0083F2A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19C25DA528A50DFE0083F2A8 /* Preview Assets.xcassets */; };
 		19C25DA828A50DFE0083F2A8 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C25DA728A50DFE0083F2A8 /* Persistence.swift */; };
 		19C25DAB28A50DFE0083F2A8 /* MealPlanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19C25DA928A50DFE0083F2A8 /* MealPlanner.xcdatamodeld */; };
+		19C25DB528A50EE80083F2A8 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C25DB428A50EE80083F2A8 /* TabBar.swift */; };
+		19C25DBA28A50F6F0083F2A8 /* DailyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C25DB928A50F6E0083F2A8 /* DailyView.swift */; };
+		19C25DBC28A50F870083F2A8 /* StaticticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C25DBB28A50F870083F2A8 /* StaticticsView.swift */; };
+		19C25DBE28A50FA30083F2A8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C25DBD28A50FA30083F2A8 /* SettingsView.swift */; };
+		19C25DC028A50FC20083F2A8 /* RecipiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C25DBF28A50FC20083F2A8 /* RecipiesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		193BA86328A5101300B49D6E /* WeighView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeighView.swift; sourceTree = "<group>"; };
+		193BA86528A5157200B49D6E /* NutritionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionModel.swift; sourceTree = "<group>"; };
+		193BA86728A515EB00B49D6E /* BodyWeightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyWeightModel.swift; sourceTree = "<group>"; };
+		193BA86928A5175B00B49D6E /* WeeklyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyCard.swift; sourceTree = "<group>"; };
+		193BA86D28A51AFA00B49D6E /* RingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingModel.swift; sourceTree = "<group>"; };
+		193BA87128A51D3100B49D6E /* RingProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingProgress.swift; sourceTree = "<group>"; };
+		193BA87328A5208900B49D6E /* RingChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingChart.swift; sourceTree = "<group>"; };
+		193BA87528A52E3A00B49D6E /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		193BA87728A5409E00B49D6E /* WeightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightViewModel.swift; sourceTree = "<group>"; };
+		193BA87928A5461900B49D6E /* MealPlanner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MealPlanner.entitlements; sourceTree = "<group>"; };
+		193BA87B28A5461900B49D6E /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		19B8CBB428BE6AD40004C48B /* NutrientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientsView.swift; sourceTree = "<group>"; };
+		19B8CBB628BE71D40004C48B /* DailyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCard.swift; sourceTree = "<group>"; };
 		19C25D9B28A50DFD0083F2A8 /* MealPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MealPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19C25D9E28A50DFD0083F2A8 /* MealPlannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlannerApp.swift; sourceTree = "<group>"; };
 		19C25DA028A50DFD0083F2A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +53,11 @@
 		19C25DA528A50DFE0083F2A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		19C25DA728A50DFE0083F2A8 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		19C25DAA28A50DFE0083F2A8 /* MealPlanner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MealPlanner.xcdatamodel; sourceTree = "<group>"; };
+		19C25DB428A50EE80083F2A8 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		19C25DB928A50F6E0083F2A8 /* DailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyView.swift; sourceTree = "<group>"; };
+		19C25DBB28A50F870083F2A8 /* StaticticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticticsView.swift; sourceTree = "<group>"; };
+		19C25DBD28A50FA30083F2A8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		19C25DBF28A50FC20083F2A8 /* RecipiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipiesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,17 +65,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				193BA87C28A5461900B49D6E /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		193BA87A28A5461900B49D6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				193BA87B28A5461900B49D6E /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		19C25D9228A50DFD0083F2A8 = {
 			isa = PBXGroup;
 			children = (
 				19C25D9D28A50DFD0083F2A8 /* MealPlanner */,
 				19C25D9C28A50DFD0083F2A8 /* Products */,
+				193BA87A28A5461900B49D6E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,8 +100,11 @@
 		19C25D9D28A50DFD0083F2A8 /* MealPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				193BA87928A5461900B49D6E /* MealPlanner.entitlements */,
+				19C25DB228A50EA90083F2A8 /* Views */,
+				19C25DB328A50EC50083F2A8 /* ViewModels */,
+				19C25DB128A50EA20083F2A8 /* Models */,
 				19C25D9E28A50DFD0083F2A8 /* MealPlannerApp.swift */,
-				19C25DA028A50DFD0083F2A8 /* ContentView.swift */,
 				19C25DA228A50DFE0083F2A8 /* Assets.xcassets */,
 				19C25DA728A50DFE0083F2A8 /* Persistence.swift */,
 				19C25DA928A50DFE0083F2A8 /* MealPlanner.xcdatamodeld */,
@@ -71,6 +119,68 @@
 				19C25DA528A50DFE0083F2A8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		19C25DB128A50EA20083F2A8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				193BA86528A5157200B49D6E /* NutritionModel.swift */,
+				193BA86728A515EB00B49D6E /* BodyWeightModel.swift */,
+				193BA86D28A51AFA00B49D6E /* RingModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		19C25DB228A50EA90083F2A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				19C25DB628A50F030083F2A8 /* Main */,
+				19C25DB728A50F0D0083F2A8 /* Detail */,
+				19C25DB828A50F190083F2A8 /* Component */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		19C25DB328A50EC50083F2A8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				193BA87728A5409E00B49D6E /* WeightViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		19C25DB628A50F030083F2A8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				19C25DA028A50DFD0083F2A8 /* ContentView.swift */,
+				19C25DB428A50EE80083F2A8 /* TabBar.swift */,
+				19C25DB928A50F6E0083F2A8 /* DailyView.swift */,
+				19C25DBB28A50F870083F2A8 /* StaticticsView.swift */,
+				19C25DBD28A50FA30083F2A8 /* SettingsView.swift */,
+				19C25DBF28A50FC20083F2A8 /* RecipiesView.swift */,
+				193BA86328A5101300B49D6E /* WeighView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		19C25DB728A50F0D0083F2A8 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		19C25DB828A50F190083F2A8 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				193BA86928A5175B00B49D6E /* WeeklyCard.swift */,
+				19B8CBB628BE71D40004C48B /* DailyCard.swift */,
+				193BA87128A51D3100B49D6E /* RingProgress.swift */,
+				193BA87328A5208900B49D6E /* RingChart.swift */,
+				193BA87528A52E3A00B49D6E /* ColorPalette.swift */,
+				19B8CBB428BE6AD40004C48B /* NutrientsView.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,10 +253,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				193BA87628A52E3A00B49D6E /* ColorPalette.swift in Sources */,
+				19C25DBC28A50F870083F2A8 /* StaticticsView.swift in Sources */,
+				193BA87828A5409E00B49D6E /* WeightViewModel.swift in Sources */,
+				19B8CBB728BE71D40004C48B /* DailyCard.swift in Sources */,
+				19C25DBE28A50FA30083F2A8 /* SettingsView.swift in Sources */,
+				19B8CBB528BE6AD40004C48B /* NutrientsView.swift in Sources */,
+				19C25DBA28A50F6F0083F2A8 /* DailyView.swift in Sources */,
+				193BA86428A5101300B49D6E /* WeighView.swift in Sources */,
+				19C25DB528A50EE80083F2A8 /* TabBar.swift in Sources */,
+				193BA86628A5157200B49D6E /* NutritionModel.swift in Sources */,
 				19C25DA828A50DFE0083F2A8 /* Persistence.swift in Sources */,
 				19C25DA128A50DFD0083F2A8 /* ContentView.swift in Sources */,
 				19C25D9F28A50DFD0083F2A8 /* MealPlannerApp.swift in Sources */,
 				19C25DAB28A50DFE0083F2A8 /* MealPlanner.xcdatamodeld in Sources */,
+				193BA87228A51D3100B49D6E /* RingProgress.swift in Sources */,
+				193BA86A28A5175B00B49D6E /* WeeklyCard.swift in Sources */,
+				193BA87428A5208900B49D6E /* RingChart.swift in Sources */,
+				19C25DC028A50FC20083F2A8 /* RecipiesView.swift in Sources */,
+				193BA86828A515EB00B49D6E /* BodyWeightModel.swift in Sources */,
+				193BA86E28A51AFA00B49D6E /* RingModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +330,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -259,7 +385,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -274,17 +400,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MealPlanner/MealPlanner.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MealPlanner/Preview Content\"";
 				DEVELOPMENT_TEAM = 846UZTA4LG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "Need for usage";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Need for usage";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Need for usage";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +426,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -303,17 +435,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MealPlanner/MealPlanner.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MealPlanner/Preview Content\"";
 				DEVELOPMENT_TEAM = 846UZTA4LG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "Need for usage";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Need for usage";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Need for usage";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,7 +461,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
