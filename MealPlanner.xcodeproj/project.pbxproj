@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		192A542C28D8F5750060168B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 192A542B28D8F5750060168B /* WidgetKit.framework */; };
+		192A542E28D8F5750060168B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 192A542D28D8F5750060168B /* SwiftUI.framework */; };
+		192A543128D8F5750060168B /* MealPlannerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192A543028D8F5750060168B /* MealPlannerWidget.swift */; };
+		192A543428D8F5770060168B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 192A543328D8F5770060168B /* Assets.xcassets */; };
+		192A543628D8F5770060168B /* MealPlannerWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 192A543228D8F5750060168B /* MealPlannerWidget.intentdefinition */; };
+		192A543728D8F5770060168B /* MealPlannerWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 192A543228D8F5750060168B /* MealPlannerWidget.intentdefinition */; };
+		192A543A28D8F5770060168B /* MealPlannerWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 192A542A28D8F5750060168B /* MealPlannerWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		193BA86428A5101300B49D6E /* WeighView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193BA86328A5101300B49D6E /* WeighView.swift */; };
 		193BA86628A5157200B49D6E /* NutritionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193BA86528A5157200B49D6E /* NutritionModel.swift */; };
 		193BA86828A515EB00B49D6E /* BodyWeightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193BA86728A515EB00B49D6E /* BodyWeightModel.swift */; };
@@ -32,7 +39,39 @@
 		19C25DC028A50FC20083F2A8 /* RecipiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C25DBF28A50FC20083F2A8 /* RecipiesView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		192A543828D8F5770060168B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19C25D9328A50DFD0083F2A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 192A542928D8F5750060168B;
+			remoteInfo = MealPlannerWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		192A543E28D8F5770060168B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				192A543A28D8F5770060168B /* MealPlannerWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		192A542A28D8F5750060168B /* MealPlannerWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MealPlannerWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		192A542B28D8F5750060168B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		192A542D28D8F5750060168B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		192A543028D8F5750060168B /* MealPlannerWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlannerWidget.swift; sourceTree = "<group>"; };
+		192A543228D8F5750060168B /* MealPlannerWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = MealPlannerWidget.intentdefinition; sourceTree = "<group>"; };
+		192A543328D8F5770060168B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		192A543528D8F5770060168B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		192A543F28D8F6AC0060168B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		193BA86328A5101300B49D6E /* WeighView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeighView.swift; sourceTree = "<group>"; };
 		193BA86528A5157200B49D6E /* NutritionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionModel.swift; sourceTree = "<group>"; };
 		193BA86728A515EB00B49D6E /* BodyWeightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyWeightModel.swift; sourceTree = "<group>"; };
@@ -61,6 +100,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		192A542728D8F5750060168B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				192A542E28D8F5750060168B /* SwiftUI.framework in Frameworks */,
+				192A542C28D8F5750060168B /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		19C25D9828A50DFD0083F2A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -72,10 +120,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		192A542F28D8F5750060168B /* MealPlannerWidget */ = {
+			isa = PBXGroup;
+			children = (
+				192A543028D8F5750060168B /* MealPlannerWidget.swift */,
+				192A543228D8F5750060168B /* MealPlannerWidget.intentdefinition */,
+				192A543328D8F5770060168B /* Assets.xcassets */,
+				192A543528D8F5770060168B /* Info.plist */,
+			);
+			path = MealPlannerWidget;
+			sourceTree = "<group>";
+		};
 		193BA87A28A5461900B49D6E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				193BA87B28A5461900B49D6E /* HealthKit.framework */,
+				192A542B28D8F5750060168B /* WidgetKit.framework */,
+				192A542D28D8F5750060168B /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -84,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				19C25D9D28A50DFD0083F2A8 /* MealPlanner */,
+				192A542F28D8F5750060168B /* MealPlannerWidget */,
 				19C25D9C28A50DFD0083F2A8 /* Products */,
 				193BA87A28A5461900B49D6E /* Frameworks */,
 			);
@@ -93,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				19C25D9B28A50DFD0083F2A8 /* MealPlanner.app */,
+				192A542A28D8F5750060168B /* MealPlannerWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +163,7 @@
 		19C25D9D28A50DFD0083F2A8 /* MealPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				192A543F28D8F6AC0060168B /* Info.plist */,
 				193BA87928A5461900B49D6E /* MealPlanner.entitlements */,
 				19C25DB228A50EA90083F2A8 /* Views */,
 				19C25DB328A50EC50083F2A8 /* ViewModels */,
@@ -186,6 +250,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		192A542928D8F5750060168B /* MealPlannerWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 192A543B28D8F5770060168B /* Build configuration list for PBXNativeTarget "MealPlannerWidgetExtension" */;
+			buildPhases = (
+				192A542628D8F5750060168B /* Sources */,
+				192A542728D8F5750060168B /* Frameworks */,
+				192A542828D8F5750060168B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MealPlannerWidgetExtension;
+			productName = MealPlannerWidgetExtension;
+			productReference = 192A542A28D8F5750060168B /* MealPlannerWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		19C25D9A28A50DFD0083F2A8 /* MealPlanner */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19C25DAE28A50DFE0083F2A8 /* Build configuration list for PBXNativeTarget "MealPlanner" */;
@@ -193,10 +274,12 @@
 				19C25D9728A50DFD0083F2A8 /* Sources */,
 				19C25D9828A50DFD0083F2A8 /* Frameworks */,
 				19C25D9928A50DFD0083F2A8 /* Resources */,
+				192A543E28D8F5770060168B /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				192A543928D8F5770060168B /* PBXTargetDependency */,
 			);
 			name = MealPlanner;
 			productName = MealPlanner;
@@ -210,9 +293,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1310;
+				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
+					192A542928D8F5750060168B = {
+						CreatedOnToolsVersion = 14.0;
+					};
 					19C25D9A28A50DFD0083F2A8 = {
 						CreatedOnToolsVersion = 13.1;
 					};
@@ -232,11 +318,20 @@
 			projectRoot = "";
 			targets = (
 				19C25D9A28A50DFD0083F2A8 /* MealPlanner */,
+				192A542928D8F5750060168B /* MealPlannerWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		192A542828D8F5750060168B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				192A543428D8F5770060168B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		19C25D9928A50DFD0083F2A8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -249,6 +344,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		192A542628D8F5750060168B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				192A543628D8F5770060168B /* MealPlannerWidget.intentdefinition in Sources */,
+				192A543128D8F5750060168B /* MealPlannerWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		19C25D9728A50DFD0083F2A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -267,6 +371,7 @@
 				19C25DA128A50DFD0083F2A8 /* ContentView.swift in Sources */,
 				19C25D9F28A50DFD0083F2A8 /* MealPlannerApp.swift in Sources */,
 				19C25DAB28A50DFE0083F2A8 /* MealPlanner.xcdatamodeld in Sources */,
+				192A543728D8F5770060168B /* MealPlannerWidget.intentdefinition in Sources */,
 				193BA87228A51D3100B49D6E /* RingProgress.swift in Sources */,
 				193BA86A28A5175B00B49D6E /* WeeklyCard.swift in Sources */,
 				193BA87428A5208900B49D6E /* RingChart.swift in Sources */,
@@ -278,7 +383,71 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		192A543928D8F5770060168B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 192A542928D8F5750060168B /* MealPlannerWidgetExtension */;
+			targetProxy = 192A543828D8F5770060168B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		192A543C28D8F5770060168B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 846UZTA4LG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MealPlannerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MealPlannerWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.hexxie.MealPlanner.MealPlannerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		192A543D28D8F5770060168B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 846UZTA4LG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MealPlannerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MealPlannerWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.hexxie.MealPlanner.MealPlannerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		19C25DAC28A50DFE0083F2A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -398,6 +567,7 @@
 		19C25DAF28A50DFE0083F2A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MealPlanner/MealPlanner.entitlements;
@@ -407,6 +577,7 @@
 				DEVELOPMENT_TEAM = 846UZTA4LG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MealPlanner/Info.plist;
 				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "Need for usage";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Need for usage";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Need for usage";
@@ -433,6 +604,7 @@
 		19C25DB028A50DFE0083F2A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MealPlanner/MealPlanner.entitlements;
@@ -442,6 +614,7 @@
 				DEVELOPMENT_TEAM = 846UZTA4LG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MealPlanner/Info.plist;
 				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "Need for usage";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Need for usage";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Need for usage";
@@ -468,6 +641,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		192A543B28D8F5770060168B /* Build configuration list for PBXNativeTarget "MealPlannerWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				192A543C28D8F5770060168B /* Debug */,
+				192A543D28D8F5770060168B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		19C25D9628A50DFD0083F2A8 /* Build configuration list for PBXProject "MealPlanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

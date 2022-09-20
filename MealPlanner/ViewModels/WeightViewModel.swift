@@ -31,6 +31,22 @@ class WeightManager: ObservableObject {
                             }
                         }
                     }
+                    healthStore.fetchCaloriesData { statisticsCollection in
+                        print("Fetching kcal")
+                        print(statisticsCollection.last?.quantity.doubleValue(for: .kilocalorie()) ?? 1000)
+                    }
+                    healthStore.fetchProteinsData { statisticsCollection in
+                        print("Fetching proteins")
+                        print(statisticsCollection.last?.quantity.doubleValue(for: .gram()) ?? 10)
+                    }
+                    healthStore.fetchFatsData { statisticsCollection in
+                        print("Fetching fats")
+                        print(statisticsCollection.last?.quantity.doubleValue(for: .gram()) ?? 10)
+                    }
+                    healthStore.fetchCarbsData { statisticsCollection in
+                        print("Fetching carbs")
+                        print(statisticsCollection.last?.quantity.doubleValue(for: .gram()) ?? 10)
+                    }
                 }
             }
         }
@@ -120,10 +136,14 @@ class HealthStore {
     
     public func requestAuthorization(completion: @escaping (Bool) -> Void) {
         let weightType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.bodyMass)!
+        let energyType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.dietaryEnergyConsumed)!
+        let proteinsType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.dietaryProtein)!
+        let fatsType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.dietaryFatTotal)!
+        let carbsType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.dietaryCarbohydrates)!
         
         guard let healthStore = self.healthStore else {return completion(false)}
         
-        healthStore.requestAuthorization(toShare: [], read: [weightType]) { (success, error) in
+        healthStore.requestAuthorization(toShare: [], read: [weightType, energyType, proteinsType, fatsType, carbsType]) { (success, error) in
             completion(success)
         }
     }
@@ -134,6 +154,86 @@ class HealthStore {
         let weightType = HKSampleType.quantityType(forIdentifier: HKQuantityTypeIdentifier.bodyMass)
         
         query = HKSampleQuery(sampleType: weightType!, predicate: nil, limit: Int(HKObjectQueryNoLimit), sortDescriptors: nil) { query, results, error in
+            
+            guard let samples = results as? [HKQuantitySample] else {
+                    // Handle any errors here.
+                    return
+                }
+            
+            completion(samples)
+        }
+        
+        if let healthStore = healthStore, let query = self.query {
+            healthStore.execute(query)
+        }
+    }
+    
+    func fetchCaloriesData(completion: @escaping ([HKQuantitySample]) -> Void) {
+        print("Fetching energy consumption")
+        
+        let caloriesData = HKSampleType.quantityType(forIdentifier: HKQuantityTypeIdentifier.dietaryEnergyConsumed)
+        
+        query = HKSampleQuery(sampleType: caloriesData!, predicate: nil, limit: Int(HKObjectQueryNoLimit), sortDescriptors: nil) { query, results, error in
+            
+            guard let samples = results as? [HKQuantitySample] else {
+                    // Handle any errors here.
+                    return
+                }
+            
+            completion(samples)
+        }
+        
+        if let healthStore = healthStore, let query = self.query {
+            healthStore.execute(query)
+        }
+    }
+    
+    func fetchProteinsData(completion: @escaping ([HKQuantitySample]) -> Void) {
+        print("Fetching proteins")
+        
+        let proteinsData = HKSampleType.quantityType(forIdentifier: HKQuantityTypeIdentifier.dietaryProtein)
+        
+        query = HKSampleQuery(sampleType: proteinsData!, predicate: nil, limit: Int(HKObjectQueryNoLimit), sortDescriptors: nil) { query, results, error in
+            
+            guard let samples = results as? [HKQuantitySample] else {
+                    // Handle any errors here.
+                    return
+                }
+            
+            completion(samples)
+        }
+        
+        if let healthStore = healthStore, let query = self.query {
+            healthStore.execute(query)
+        }
+    }
+    
+    func fetchFatsData(completion: @escaping ([HKQuantitySample]) -> Void) {
+        print("Fetching energy consumption")
+        
+        let totalFatsData = HKSampleType.quantityType(forIdentifier: HKQuantityTypeIdentifier.dietaryFatTotal)
+        
+        query = HKSampleQuery(sampleType: totalFatsData!, predicate: nil, limit: Int(HKObjectQueryNoLimit), sortDescriptors: nil) { query, results, error in
+            
+            guard let samples = results as? [HKQuantitySample] else {
+                    // Handle any errors here.
+                    return
+                }
+            
+            completion(samples)
+        }
+        
+        if let healthStore = healthStore, let query = self.query {
+            healthStore.execute(query)
+        }
+    }
+    
+    func fetchCarbsData(completion: @escaping ([HKQuantitySample]) -> Void) {
+        print("Fetching energy consumption")
+        
+        let carbsData = HKSampleType.quantityType(forIdentifier: HKQuantityTypeIdentifier.dietaryCarbohydrates)
+        
+        query = HKSampleQuery(sampleType: carbsData!, predicate: nil, limit: Int(HKObjectQueryNoLimit), sortDescriptors: nil) { query, results, error in
             
             guard let samples = results as? [HKQuantitySample] else {
                     // Handle any errors here.
